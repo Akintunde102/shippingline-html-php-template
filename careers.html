@@ -5,24 +5,24 @@
 </div>
 <div class="about-breadcrumb"  style="border-top: 2px solid #e01f3d;" >
 		<ul>
-			<li><a href="index.html">Home</a><i>></i></li>
-			<li>Careers</li>
+			<li><a href="index.html"><?=$lang['title']?></a><i>></i></li>
+			<li><?=$lang['MENU_CAREER']?></li>
 		</ul>
 	</div>
 </div>
 <div class="w3ls_address_mail_footer_grids">
 <div class="container">
 	<div class="col-md-6 contact-form" style="background: #181919;">
-				<h4 class="white-w3ls">Submit  <span>CV/Resume</span></h4>
+				<h4 class="white-w3ls"><?=$lang['CAREER_FORM_1']?><span><?=$lang['CAREER_FORM_2']?></span></h4>
 				<form action="cv.php" method="post" enctype="multipart/form-data">
 					<div class="styled-input agile-styled-input-top">
 						<input type="text" name="Name" required="">
-						<label>Name</label>
+						<label><?=$lang['CAREER_FORM_3']?></label>
 						<span></span>
 					</div>
 					<div class="styled-input">
 						<input type="email" name="Email" required=""> 
-						<label>Email</label>
+						<label><?=$lang['CAREER_FORM_4']?></label>
 						<span></span>
 					</div> 
 					<div class="styled-input">
@@ -35,7 +35,7 @@
     font-size: 14px;
     letter-spacing: 1px;
     display: block;
-    line-height: 1em;"> Attach File </span>
+    line-height: 1em;"> <?=$lang['CAREER_FORM_5']?> </span>
 						<input  type="file" name="cv" required="">
 						<span></span>
 					</div>	 
@@ -43,9 +43,9 @@
 				</form>
 			</div>
 			<div class="col-md-6 contactright">
-				<h3>Careers</h3>
+				<h3><?=$lang['CAREER_FORM_6']?></h3>
 				<div class="w3ls_footer_grid_left">
-					<p>There are no open career positions at the moment . Fill the Form on this page and drop your CV/Resume with us in case there is an opening</p>
+					<p><?=$lang['CAREER_FORM_7']?></p>
 				</div>
 				
 			</div>
