@@ -1,8 +1,25 @@
-<?php require_once('mailer/class.phpmailer.php'); ?>
+<?php
+
+//Language Processing
+require_once('lang_process.php');
+
+
+
+//Mail Dependency
+require_once('mailer/class.phpmailer.php');
+
+
+
+
+
+
+
+
+ ?>
  <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<title> Shipping Line </title>
+<title><?=$lang['title']?></title>
 <!-- Meta tag Keywords -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -41,12 +58,12 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					<!-- navbar-header -->
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav navbar-right">
-							<li><a class="hvr-underline-from-center active" href="index.html">Home</a></li>
-							<li><a href="about-us.html" class="hvr-underline-from-center">About Us </a></li>
-							<li><a href="services.html" class="hvr-underline-from-center">Services</a></li>
-							<li><a href="careers.html" class="hvr-underline-from-center">Careers</a></li>
+							<li><a class="hvr-underline-from-center active" href="index.html"><?=$lang['MENU_INDEX']?></a></li>
+							<li><a href="about-us.html" class="hvr-underline-from-center"><?=$lang['MENU_ABOUTUS']?></a></li>
+							<li><a href="services.html" class="hvr-underline-from-center"><?=$lang['MENU_SERVICES']?></a></li>
+							<li><a href="careers.html" class="hvr-underline-from-center"><?=$lang['MENU_CAREER']?></a></li>
 						
-							<li><a href="contact-us.html" class="hvr-underline-from-center">Contact Us</a></li>
+							<li><a href="contact-us.html" class="hvr-underline-from-center"><?=$lang['MENU_CONTACTUS']?></a></li>
 						</ul>
 					</div>
 

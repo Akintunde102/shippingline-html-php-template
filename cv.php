@@ -12,10 +12,10 @@ require_once('mailer/class.phpmailer.php');
 		
 		$expensions= array("doc","docx","pdf","jpg","jpeg","png"); 		
 		if(in_array($file_ext,$expensions)=== false){
-			$error[]="extension not allowed, please choose a JPEG or PNG file.";
+			$error[]= $lang['CV_ERROR_1'];
 		}
 		if($file_size > 120000){
-		$error[]='File must be 100kb or less';
+		$error[]= $lang['CV_ERROR_2'];
 		}		
 		
 		if(empty($error)==true){
@@ -24,7 +24,7 @@ require_once('mailer/class.phpmailer.php');
 			//echo "Success";
 		}
 		else {
-			echo "There was an error uploading your CV due to the following reasons<br/>";
+			echo $lang['CV_ERROR_3'];
 			echo '<ol>';
 			foreach($error as $error){
 			echo '<li style="color: red;">'.$error.'</li>';
@@ -32,7 +32,7 @@ require_once('mailer/class.phpmailer.php');
 			echo '</ol>';
 		}
 		
-		echo '<a href="careers.html"><=GO BACK</a>';
+		echo '<a href="careers.html"><='.$lang['CV_1'].'</a>';
 			
 			
 			
